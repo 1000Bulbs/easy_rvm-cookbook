@@ -4,4 +4,6 @@ user_account "testuser" do
   shell       '/bin/bash'
 end
 
-install_user_rvm 'testuser'
+install_user_rvm 'testuser' do
+  default_ruby '2.2'
+end

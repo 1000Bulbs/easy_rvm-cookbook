@@ -1,6 +1,7 @@
 resource_name :install_user_rvm
 
 property :user_name, String, :name_attribute => true
+property :default_ruby, String, :default => ''
 
 default_action :install
 
@@ -13,5 +14,11 @@ action :install do
     environment "HOME" => "/home/#{user_name}"
     command     "curl -sSL https://get.rvm.io | bash -s stable"
     user        user_name
+  end
+
+  unless default_ruby.empty?
+    rvm_install default_ruby do
+      user user_name
+    end
   end
 end
