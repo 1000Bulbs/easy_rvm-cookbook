@@ -3,3 +3,5 @@ user_account "testuser" do
   manage_home true
   shell       '/bin/bash'
 end
+
+install_user_rvm 'testuser'
