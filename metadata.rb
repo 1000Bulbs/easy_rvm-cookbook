@@ -1,6 +1,6 @@
 name             'easy_rvm'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Zach Campbell'
+maintainer_email 'zcampbell@1000bulbs.com'
 license          'All rights reserved'
 description      'Installs/Configures easy_rvm'
 long_description 'Installs/Configures easy_rvm'
