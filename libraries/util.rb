@@ -13,3 +13,7 @@ def rvm_exec(user_name, command)
     user        user_name
   end
 end
+
+def rvm_do(user, version, command)
+  rvm_exec(user, "#{version} do #{command}")
+end
