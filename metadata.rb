@@ -1,0 +1,7 @@
+name             'easy_rvm'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures easy_rvm'
+long_description 'Installs/Configures easy_rvm'
+version          '0.1.0'
