@@ -7,7 +7,7 @@ property :ruby_version, String
 default_action :install
 
 action :install do
-  install_user_rvm user
+  user_rvm user
 
   rvm_install ruby_version do
     user new_resource.user
