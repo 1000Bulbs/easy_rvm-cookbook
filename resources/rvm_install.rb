@@ -6,6 +6,7 @@ property :user, String
 default_action :install
 
 action :install do
+  package "build-essential"
   rvm_exec(user, "autolibs disable")
   rvm_exec(user, "install #{ruby_string}")
 end

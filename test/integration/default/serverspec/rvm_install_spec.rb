@@ -10,3 +10,7 @@ end
 describe command("ls /home/testuser/.rvm/rubies") do
   its(:stdout) { should contain("ruby-2.2") }
 end
+
+describe package("build-essential") do
+  it { should be_installed }
+end
